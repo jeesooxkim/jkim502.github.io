@@ -46,6 +46,17 @@ table {
   border-spacing: 0;
 }
 
+/*my personalized style begins here */
+
+p {
+  display: block;
+  font-size: 14px;
+}
+
+.resize {
+  width: 100px;
+}
+
 h1 {
   color: darkblue;
 }
