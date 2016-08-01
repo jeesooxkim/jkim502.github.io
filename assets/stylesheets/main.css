@@ -206,9 +206,9 @@ footer {
   -moz-animation-fill-mode:forwards;
   animation-fill-mode:forwards;
 
-  -webkit-animation-duration:1s;
-  -moz-animation-duration:1s;
-  animation-duration:1s;
+  -webkit-animation-duration:1.5s;
+  -moz-animation-duration:1.5s;
+  animation-duration:1.5s;
 }
 
 .fade_in.one { 
@@ -222,6 +222,32 @@ footer {
   -moz-animation-delay:1.2s;
   animation-delay:1.2s;
 }
+
+.fade_in.three { 
+  -webkit-animation-delay:2s;
+  -moz-animation-delay:2s;
+  animation-delay:2s;
+}
+
+.fade_in.four { 
+  -webkit-animation-delay:2.5s;
+  -moz-animation-delay:2.5s;
+  animation-delay:2.5s;
+}
+
+.fade_in.five { 
+  -webkit-animation-delay:3s;
+  -moz-animation-delay:3s;
+  animation-delay:3s;
+}
+
+.fade_in.six { 
+  -webkit-animation-delay:3.5s;
+  -moz-animation-delay:3.5s;
+  animation-delay:3.5s;
+}
+
+
 
 /*
 @keyframes start {
