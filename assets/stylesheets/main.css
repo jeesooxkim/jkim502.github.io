@@ -27,9 +27,7 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block;
 }
-body {
-  line-height: 2;
-}
+
 ol, ul {
   list-style: none;
 }
@@ -55,6 +53,7 @@ body {
   font-family: 'Raleway', Helvetica, Arial, sans-serif;
   font-size: 14px;
   height: 100%;
+  line-height: 2;
 }
 
 header {
@@ -72,14 +71,14 @@ nav {
   text-align: right;
 }
 
-#profile {
+.profile {
   display: inline-block;
   position: relative;
   margin-left: 20%;
   width: 25%;
 }
 
-#intro {
+.intro {
   display: inline-block;
   position: relative;
   margin-top: 30px;
@@ -177,4 +176,68 @@ footer {
   color: white;
   margin-bottom: 0;
 }
+
+
+/* animation code */
+
+@-webkit-keyframes fadeIn { 
+  from {opacity:0;} 
+  to {opacity:1;} 
+}
+
+@-moz-keyframes fadeIn { 
+  from {opacity:0;} 
+  to {opacity:1;} 
+}
+
+@keyframes fadeIn { 
+  from {opacity:0;} 
+  to {opacity:1;} 
+}
+
+
+.fade_in {
+  opacity:0;
+  -webkit-animation:fadeIn ease-in 1;
+  -moz-animation:fadeIn ease-in 1;
+  animation:fadeIn ease-in 1;
+
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode:forwards;
+  animation-fill-mode:forwards;
+
+  -webkit-animation-duration:1s;
+  -moz-animation-duration:1s;
+  animation-duration:1s;
+}
+
+.fade_in.one { 
+  -webkit-animation-delay:0.7s;
+  -moz-animation-delay:0.7s;
+  animation-delay:0.7s;
+}
+
+.fade_in.two { 
+  -webkit-animation-delay:1.2s;
+  -moz-animation-delay:1.2s;
+  animation-delay:1.2s;
+}
+
+/*
+@keyframes start {
+  from {background-color: black;}
+  to {background-image:url(assets/images/background.JPG); background-size:cover; background-attachment:fixed;}
+}
+
+body {
+  background-color: black;
+  animation-name: start;
+  animation-delay: 1s;
+  animation-duration: 4s;
+
+}
+*/
+
+
+
 
