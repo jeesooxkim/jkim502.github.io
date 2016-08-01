@@ -46,6 +46,16 @@ table {
   border-spacing: 0;
 }
 
-.header {
-  color: blue;
+h1 {
+  color: darkblue;
 }
+
+h2 {
+  color: blue;
+  background: grey;
+}
+
+h3 {
+  color: lightblue;
+}
+
