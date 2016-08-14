@@ -9,14 +9,8 @@
 
 	<body style="background-image:url(assets/images/background.JPG); background-size:cover; background-attachment:fixed;" id="top">
 
-		<div id="wrapper">
-			<div id="header"></div>
-			<div id="content"></div>
-			<div id="footer"></div>
-		</div>
 
-
-		<header class="fixPosition">
+		<header class="fixPosition container clearfix" id="header">
 			<p class="fadeIn one" id="titlepage">JEESOO KIM.</p>
 			<h3 class="fadeIn one" id="subtitle">Engineering. Code. Innovation.</h3>
 
@@ -30,7 +24,7 @@
 			<hr>
 		</header>
 
-		<content class="content">
+		<content class="content container clearfix" id="content">
 			<section class="hello">
 				<div class="fadeIn three profile">
 					<img src="assets/images/profile.PNG" class="image-padding image-resize profile"/>
@@ -47,8 +41,12 @@
 			</section>
 
 			<section class="fadeIn four who">
-				<h2>who</h2>
-				<p>a biomedical engineering and computer science undergraduate student + researcher at Johns Hopkins University</p>
+				
+				<div>
+					<h2>who</h2>
+					<p>a biomedical engineering and computer science undergraduate student + researcher at Johns Hopkins University</p>
+				</div>
+
 			</section><!--
 
 			--><section class="fadeIn five what">
@@ -61,13 +59,15 @@
 				<p>to use creativity and technical knowledge + skills to design products that are not only efficient and essential to biomedical development, but also aesthetically strategic and appealing</p>
 			</section>
 
-		</content><!--
+		</content>
 
-		--><a href="#top" class="fadeIn six returnToTop">back to top</a>
 
-		<footer class="fadeIn two">
-			<hr>
-			<small>&copy; Jeesoo Jean Kim 2016</small>
+		<footer class="fadeIn two container">
+			<div class="footer clearfix">
+				<a href="#top" class="fadeIn six returnToTop">back to top</a>
+				<hr>
+				<small class="copyright">&copy; Jeesoo Jean Kim 2016</small>
+			</div>
 		</footer>
 
 

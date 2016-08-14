@@ -2,6 +2,10 @@
   License: none (public domain)
 */
 
+/* =====================================
+RESET
+======================================*/
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -44,7 +48,117 @@ table {
   border-spacing: 0;
 }
 
-/*======= my personalized style begins here ===========*/
+/*===============================================
+GRID 
+================================================*/
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.container { /* centers element and provides left and right breathing space */
+  margin: 0 auto;
+  padding-left: 30px;
+  padding-right: 30px;
+  width: 960px;
+}
+
+/*================================================ 
+TYPOGRAPHY 
+=================================================*/
+
+h1, h2, h3, h4, h5, h6, p { /*setting the bottom margin for the text elements (breathing space) */
+  margin-bottom: 22px;
+}
+
+h1 {
+  color: #efecca;
+  font-size: 22px;
+}
+
+h2 {
+  color: #e6e2af;
+  font-size: 18px;
+}
+
+h3 {
+  color: #a7a37e;
+  font-size: 16px;
+}
+
+h4 {
+
+
+}
+
+h5 {
+
+}
+
+h6 {
+  color: #efecca;
+  font-size: 35px;
+}
+
+p {
+  display: block;
+  color: white;
+  text-shadow: 1px 1px 2px black;
+}
+
+/*=================================================
+BUTTONS
+ ==================================================*/  
+
+.btn { 
+  border-radius: 5px;
+  display: inline-block;
+  margin: 0;
+}
+
+.btn-1 { /*1px solid grey border*/
+  border: 1px solid #dfe2e5;
+  padding: 10px 30px; /*top and bottom: 10px, left and right: 30px */
+}
+
+/*================================================
+CLEARFIX
+=================================================*/
+
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix {
+  clear: both;
+  *zoom: 1;
+}
+
+
+/*=================================================================================
+MY DESIGNS ARE KICKING OFF NOW WOO
+=================================================================================*/
+
+/*================================================
+HOME
+=================================================*/
+
+
+
+
+section {
+
+}
 
 body {
   margin: 20px;
@@ -52,7 +166,7 @@ body {
   font-family: 'Raleway', Helvetica, Arial, sans-serif;
   font-size: 14px;
   height: auto;
-  width:auto;
+  width: auto;
   line-height: 2;
 }
 
@@ -72,12 +186,7 @@ nav {
   margin-left:74%;
 }
 
-p {
-  display: block;
-  color: white;
-  text-shadow: 1px 1px 2px black;
 
-}
 
 .navbar {
   padding-left: 5px;
@@ -165,28 +274,7 @@ a:hover {
   color: #f53e05;
 }
 
-
-h6 {
-  color: #efecca;
-  font-size: 35px;
-}
-
-h1 {
-  color: #efecca;
-  font-size: 22px;
-}
-
-h2 {
-  color: #e6e2af;
-  font-size: 18px;
-}
-
-h3 {
-  color: #a7a37e;
-  font-size: 16px;
-}
-
-#wrapper {
+#top {
   min-height: 100%;
   position: relative;
 }
@@ -201,20 +289,28 @@ h3 {
 
 #footer {
   width: 100%;
-  bottom: 0;
+  bottom: 10px;
   position: fixed;
 }
 
+#footer .returnToTop {
+  text-align: left;
+}
+
+#footer .copyright {
+  text-align: center;
+}
 
 footer {
-  text-align: center;
   font-size: 12px;
   color: white;
   margin-bottom: 0;
 }
 
 
-/*====== ANIMATION CODE =======*/
+/*====================================================== 
+ANIMATION CODE 
+=======================================================*/
 
 @-webkit-keyframes fadeIn { 
   from {opacity:0;} 
