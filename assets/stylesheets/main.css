@@ -2,6 +2,10 @@
   License: none (public domain)
 */
 
+/* =====================================
+RESET
+======================================*/
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -44,131 +48,31 @@ table {
   border-spacing: 0;
 }
 
-/*======= my personalized style begins here ===========*/
+/*===============================================
+GRID 
+================================================*/
 
-body {
-  margin: 20px;
-  padding: 10px;
-  font-family: 'Raleway', Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  height: auto;
-  width:auto;
-  line-height: 2;
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-.content {
-  margin-top:200px;
-}
-
-.fixPosition {
-  position: fixed;
-}
-
-header {
-  line-height: 0.6;
-}
-
-nav {
-  margin-left:74%;
-}
-
-p {
-  display: block;
-  color: white;
-  text-shadow: 1px 1px 2px black;
-
-}
-
-.navbar {
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-.hello {
-  padding-top: 100px;
-  padding-bottom: 20px;
-}
-
-.intro {
-  display: inline-block;
-  position: relative;
-  margin-top: 30px;
-  margin-left: 15%;
-  width: 25%;
-  vertical-align: top;
-}
-
-.profile {
-  display: inline-block;
-  position: relative;
-  margin-left: 15%;
-  width: 25%;
-  border-radius: 70px;
-}
-
-#titlepage {
-  font-family: 'Slabo 27px', serif;
-  font-size: 50px;
-  color: #efecca;
-  text-shadow: none;
-  padding-left: 10px;
-}
-
-#subtitle {
-  padding-top: 15px;
-  padding-left: 25px;
-}
- /*
-#returnToTop {
+.container { /* centers element and provides left and right breathing space */
+  margin: 0 auto;
   padding-left: 30px;
+  padding-right: 30px;
+  width: 960px;
 }
 
-*/
+/*================================================ 
+TYPOGRAPHY 
+=================================================*/
 
-.image-padding {
-  padding: 20px;
-}
-
-.image-resize {
-  width: 450px;
-}
-
-/*
-img.profile {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-
-}
-
-*/
-
-.who, .what, .why {
-  display: inline-block;
-  width: 30%;
-  margin: 0 1.5% 24px 1.5%;
-  vertical-align: top;
-  text-align: center;
-}
-
-.center {
-  text-align: center;
-}
-
-a {
-  font-size: 16px;
-  color: #b63719;
-  text-decoration: none;
-}
-
-a:hover {
-  color: #f53e05;
-}
-
-
-h6 {
-  color: #efecca;
-  font-size: 35px;
+h1, h2, h3, h4, h5, h6, p { /*setting the bottom margin for the text elements (breathing space) */
+  margin-bottom: 22px;
 }
 
 h1 {
@@ -186,35 +90,256 @@ h3 {
   font-size: 16px;
 }
 
-#wrapper {
+h4 {
+  color: #efecca;
+  font-size: 50px;
+}
+
+h5 {
+
+}
+
+h6 {
+  color: #efecca;
+  font-size: 35px;
+}
+
+p {
+  display: block;
+  color: white;
+  text-shadow: 1px 1px 2px black;
+}
+
+/*=================================================
+BUTTONS
+ ==================================================*/  
+
+.btn { 
+  border-radius: 5px;
+  display: inline-block;
+  margin: 0;
+}
+
+.btn-1 { /*1px solid grey border*/
+  border: 1px solid #dfe2e5;
+  padding: 10px 30px; /*top and bottom: 10px, left and right: 30px */
+}
+
+/*================================================
+CLEARFIX
+=================================================*/
+
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix {
+  clear: both;
+  *zoom: 1;
+}
+
+
+/*=================================================================================
+MY DESIGNS ARE KICKING OFF NOW WOO
+=================================================================================*/
+
+/*================================================
+HOME
+=================================================*/
+
+body {
+  padding: 5% 3% 3% 3%;
+  font-family: 'Raleway', Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 2;
+}
+
+.content {
+  padding-top:100px;
+  display:block;
+}
+
+
+/*============ HEADER ==================*/
+
+header {
+  line-height: 0.6;
+}
+
+.hello {
+  padding-bottom: 20px;
+}
+
+.profile {
+  display: inline-block;
+  float: left;
+  width: 32%;
+  margin-top: 30px;
+  margin-bottom: 4%;
+  margin-left: 18%;
+  border-radius: 15%;
+  max-width: 475px;
+}
+
+.intro {
+  float: right;
+  display: inline-block;
+  margin-top: 30px;
+  padding-right: 15%;
+  padding-left: 2%;
+  width: 50%;
+  vertical-align: top;
+}
+
+
+.title {
+  font-family: 'Slabo 27px', serif;
+  text-shadow: none;
+  padding-top: 20px;
+  padding-left: 10px;
+}
+
+.subtitle {
+  display: inline;
+  padding-left: 30px;
+}
+
+
+/*========== NAVIGATION BAR =============*/
+
+nav {
+  display: inline-block;
+  padding-bottom: 5px;
+  padding-right: 15px;
+  float: right;
+}
+
+
+/*============== SUMMARY ================*/
+
+.who, .what, .why {
+  display: inline-block;
+  width: 30%;
+  margin: 0 1.3% 24px 1.3%;
+  vertical-align: top;
+  text-align: center;
+}
+
+/*============ GENERAL ==============*/
+
+.center {
+  text-align: center;
+}
+
+a {
+  font-size: 16px;
+  color: #b63719;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #f53e05;
+}
+
+.fixPosition {
+  width: 94%;
+  margin-right: 3%;
+  position: fixed;
+}
+
+#top {
   min-height: 100%;
   position: relative;
 }
 
-#header {
-
+.behindHeader {
+  position: absolute;
+  overflow: auto;
 }
 
-#content {
-  padding-bottom: 50px;
+.twocolumnleft {
+  display: inline-block;
+  float: left;
+  width: 50%;
 }
+
+.twocolumnright {
+  display: inline-block;
+  float: right;
+  width: 50%;
+}
+
+
+
+/*============ FOOTER =============*/
 
 #footer {
   width: 100%;
-  bottom: 0;
+  bottom: 10px;
   position: fixed;
 }
 
+#footer .returnToTop {
+  text-align: left;
+}
+
+#footer .copyright {
+  text-align: center;
+}
 
 footer {
-  text-align: center;
   font-size: 12px;
   color: white;
   margin-bottom: 0;
 }
 
+/*=====================================================
+PROJECTS
+======================================================*/
+.imageleft {
+  float: right;
+}
 
-/*====== ANIMATION CODE =======*/
+.imageright {
+  float: left;
+}
+
+.speechbanana {
+  max-width:65%;
+  margin-left: 10%;
+  padding-left: 10%;
+  padding-right:10%;
+}
+
+.hopkinsmedicine {
+  max-width:100%;
+  padding-left: 10%;
+  padding-right:10%;
+}
+
+
+.jhuwhiting {
+  max-width:100%;
+  padding-left: 10%;
+  padding-right:10%;
+}
+
+.tremtex {
+  max-width:100%;
+  padding-left: 10%;
+  padding-right:10%;
+}
+
+
+/*====================================================== 
+ANIMATION CODE 
+=======================================================*/
 
 @-webkit-keyframes fadeIn { 
   from {opacity:0;} 

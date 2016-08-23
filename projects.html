@@ -7,42 +7,92 @@
 		<link href='https://fonts.googleapis.com/css?family=Slabo+27px|Raleway:400,200,700,300italic,200italic|Roboto+Slab:400,100|Titillium+Web:400,200,200italic,400italic,600,600italic' rel='stylesheet' type='text/css'>
 	</head>
 
-	<body style="background-image:url(assets/images/background.JPG); background-size:cover;" id="top">
-		<header>
-			<h1>Portfolio of projects.</h1>
-			<p>Here you will find an up to date list and description of projects that Jeesoo has worked on.</p>
+	<body style="background-image:url(assets/images/background.JPG); background-size:cover;background-attachment:fixed;" id="top">
+		<header class= "fixPosition">
+			<div class="clearfix">
+				<h1>Portfolio of projects.</h1>
+				<p>Here you will find an up to date list and description of projects that Jeesoo has worked on.</p>
+			</div>
+			<div class="clearfix">
+				<nav class="fadeIn two">
+					<a href="index.html">HOME</a>
+					<a href="about.html" target="_blank">ABOUT</a>
+					<a href="skills.html" target="_blank">SKILLS</a>
+					<a href="projects.html" target="_blank">PROJECTS</a>
+					<a href="contact.html" target="_blank">CONTACT</a>
+				</nav>
+			</div>
 			<hr>
 		</header>
 
-		<section>
+		<content class="content">
+			<section class="clearfix">
 
-			<h3>Android Developer/iOS Manager at Speech Banana JHU</h3>
-			<p>Speech Banana is an exercise-based application designed to aid deaf individuals who have received a cochlear implant, hence have lingering impairments in listening, in improving their listening/communications skills and quality of life.</p>
-			<p>I am the developer of the Android version of the app while also in charge of maintaining the iOS version. In the future we plan to implement gaming components to the chapter exercises to create an engaging user interface. We are also seeking to increase our reach within the deaf community by working on a British English version and a Korean version of the application.</p>
-			<a href="http://speechbanana.jhu.edu/" target="_blank">Launch Speech Banana Website</a>
-		
-		</section>
+				<h3 class="center">Android Developer/iOS Manager at Speech Banana JHU</h3>
+				<h5 class="center"> Department of Biomedical Engineering </h5>
+				<div class="twocolumnleft">
+					<p>Speech Banana is an exercise-based application designed to aid deaf individuals who have received cochlear implants. These individuals have lingering impairment in communication due to underdeveloped listening skills. Through easily accessible systemized listening exercises, we aim to improve their communication abilties, and consequently, their quality of life.</p>
+					<p>I am the developer of the Android version of the app, and I am also in charge of maintaining the iOS version. In the future we plan to implement gaming components to the chapter exercises to create an engaging user interface, in order to encourage younger users. We are also seeking to increase our reach within the deaf community by working on a British English version and a Korean version of the application. We are currently undergoing preparations for clincal trials.</p>
+					<a href="http://speechbanana.jhu.edu/" target="_blank">Launch Speech Banana Website</a>
+				</div>
 
-		<br>
+				<div class="twocolumnright imageright">
+					<img src="assets/images/speechbanana.PNG" class="speechbanana"/>
+				</div>
+			
+			</section>
 
-		<section>
-			<h3>Research in Computational Biology at Cahan Lab (Institute of Cellular Engineering and Institute of Computational Medicine)</h3>
-			<p>Cahan Lab focuses on accurate and efficient analysis of RNA-seq data through developing a cloud-based platform (written in R language) called CellNet in order to improve the accuracy of stem cell differentiation with respect to its target cells.</p>
-			<p>My current project focuses on human RNA-seq data collection from mass online databases, and improving the efficiency of the CellNet system in order for quicker processing and analysis of existing human RNA-seq accessions.</p>
-			<a href="http://www.cahanlab.org/" target="_blank">Launch Cahan Lab Website</a>
-		</section>
+			<br>
 
-		<br>
+			<section class="clearfix">
+				<h3 class="center">Research in Computational Biology at Cahan Lab</h3>
+				<h5 class="center">Institute of Cellular Engineering and Department of Biomedical Engineering</h5>
+				<div class="twocolumnright">
+					<p>Cahan Lab focuses on accurate and efficient analysis of RNA-seq data through developing a cloud-based platform (written in R language) called CellNet in order to improve the accuracy of stem cell differentiation with respect to their target cells. This platform utilizes Amazon Web Services.</p>
+					<p>My current project focuses on human RNA-seq data collection of biopsied samples from mass online databases, such as GEO accession data and GTX data, and improving the efficiency of the CellNet pipeline in order for quicker processing and analysis of existing human RNA-seq accessions. After extensive debugging, we are currently feeding collected data through analysis algorithms, and obtaining standard data which will eventually serve as a baseline for accuracy comparison for ex vivo differentiated cells.</p>
+					<a href="http://www.cahanlab.org/" target="_blank">Launch Cahan Lab Website</a>
+				</div>
 
-		<section>
-			<h3>Data Analyst at Hristova Lab (Institute of NanoBioTechnology)</h3>
-			<p>In this biomaterials lab, I worked as a data analyst, running thousands of cell FRET scans through a MATLAB program in order to determine concentration differences depending on different dilutions and stimuli.</p>
-			<a href="http://engineering.jhu.edu/hristova/" target="_blank">Launch Hristova Lab Website</a>
-		</section>
+				<div class="twocolumnleft imageleft">
+					<img src="assets/images/hopkinsmedicine.PNG" class="hopkinsmedicine"/>
+				</div>
+			</section>
+
+			<br>
+
+			<section class="clearfix">
+				<h3 class="center">Data Analyst at Biomaterials Lab</h3>
+				<h5 class="center">Institute of NanoBioTechnology</h5>
+				<div class="twocolumnleft">
+					<p>This lab focuses on analysis of FRET scans in order to better understand the effect of receptor mutations on cancer development/tumor metastasis, as well as investigating potential treatments by exposing the receptors to specific ligands.</p>
+					<p>I worked as a data analyst, running thousands of cell FRET and donor scans through a MATLAB program in order to determine fluorescence differences depending on different mutations, ligands, and dilutions. I am also currently in process of co-authoring a paper, which will be submitted in early September.</p>
+					<a href="http://engineering.jhu.edu/hristova/" target="_blank">Launch Hristova Lab Website</a>
+				</div>
+
+				<div class="twocolumnright imageright">
+					<img src="assets/images/jhuwhiting.PNG" class="jhuwhiting"/>
+				</div>
+			</section>
+
+			<section class="clearfix">
+				<h3 class="center">Product Design/Development at TremTex Team</h3>
+				<h5 class="center">Center for Biomedical Innovations</h5>
+				<div class="twocolumnright">
+					<p>TremTex, an undergraduate biomedical engineering project team, focuses on building an in-home tDCS treatment device for reducing Parkinson’s Disease patients’ tremors. By providing an easily accessible, inexpensive, and non-invasive treatment option to Parkinson's patients that is easily performed at home, we hope to revolutionize motor symptom treatment of Parkinson's Disease.</p>
+					<p>We went through extensive prototyping, including CAD and 3D printing, and iterations of business plans for our device. I performed all presentations to faculty and experts, including a presentation in JHU's 2016 Business Plan Competition, in which our team placed Third Place in the Medical Technologies Track.</p>
+				</div>
+				<div class="twocolumnleft imageleft">
+					<img src="assets/images/tremtex.PNG" class="tremtex"/>
+				</div>
+			</section>
+		</content>
 
 		<footer>
-			<hr>
-			<small>&copy; Jeesoo Jean Kim 2016</small>
+			<div class="footer clearfix">
+				<a href="#top" class="fadeIn six returnToTop">back to top</a>
+				<hr>
+				<small>&copy; Jeesoo Jean Kim 2016</small>
+			</div>
 		</footer>
 
 	</body>
