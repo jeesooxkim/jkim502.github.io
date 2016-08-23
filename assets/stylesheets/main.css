@@ -91,8 +91,8 @@ h3 {
 }
 
 h4 {
-
-
+  color: #efecca;
+  font-size: 50px;
 }
 
 h5 {
@@ -161,7 +161,8 @@ body {
 }
 
 .content {
-  margin-top:200px;
+  padding-top:100px;
+  display:block;
 }
 
 
@@ -172,7 +173,6 @@ header {
 }
 
 .hello {
-  padding-top: 100px;
   padding-bottom: 20px;
 }
 
@@ -198,17 +198,16 @@ header {
 }
 
 
-#titlepage {
+.title {
   font-family: 'Slabo 27px', serif;
-  font-size: 50px;
-  color: #efecca;
   text-shadow: none;
+  padding-top: 20px;
   padding-left: 10px;
 }
 
-#subtitle {
-  padding-top: 15px;
-  padding-left: 25px;
+.subtitle {
+  display: inline;
+  padding-left: 30px;
 }
 
 
@@ -216,6 +215,8 @@ header {
 
 nav {
   display: inline-block;
+  padding-bottom: 5px;
+  padding-right: 15px;
   float: right;
 }
 
@@ -257,9 +258,23 @@ a:hover {
   position: relative;
 }
 
-#content {
-  padding-bottom: 50px;
+.behindHeader {
+  position: absolute;
+  overflow: auto;
 }
+
+.twocolumnleft {
+  display: inline-block;
+  float: left;
+  width: 50%;
+}
+
+.twocolumnright {
+  display: inline-block;
+  float: right;
+  width: 50%;
+}
+
 
 
 /*============ FOOTER =============*/
@@ -282,6 +297,43 @@ footer {
   font-size: 12px;
   color: white;
   margin-bottom: 0;
+}
+
+/*=====================================================
+PROJECTS
+======================================================*/
+.imageleft {
+  float: right;
+}
+
+.imageright {
+  float: left;
+}
+
+.speechbanana {
+  max-width:65%;
+  margin-left: 10%;
+  padding-left: 10%;
+  padding-right:10%;
+}
+
+.hopkinsmedicine {
+  max-width:100%;
+  padding-left: 10%;
+  padding-right:10%;
+}
+
+
+.jhuwhiting {
+  max-width:100%;
+  padding-left: 10%;
+  padding-right:10%;
+}
+
+.tremtex {
+  max-width:100%;
+  padding-left: 10%;
+  padding-right:10%;
 }
 
 
