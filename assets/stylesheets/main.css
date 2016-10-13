@@ -6,6 +6,8 @@
 RESET
 ======================================*/
 
+@import url('https://fonts.googleapis.com/css?family=Dosis:400,700|Exo+2:400,700|Yatra+One');
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -72,33 +74,35 @@ TYPOGRAPHY
 =================================================*/
 
 h1, h2, h3, h4, h5, h6, p { /*setting the bottom margin for the text elements (breathing space) */
-  margin-bottom: 22px;
+  margin-bottom: 18px;
+  font-family: 'Exo 2', sans-serif;
 }
 
-h1 {
-  color: #efecca;
-  font-size: 22px;
+h1 { /*title of each new page*/
+  color: #9B070C;
+  font-size: 27px;
 }
 
-h2 {
+h2 { /*white subtitles*/
   color: #e6e2af;
   font-size: 18px;
+
 }
 
 h3 {
-  color: #a7a37e;
-  font-size: 20px;
+  color: #DAEDE6;
+  font-size: 24px;
 }
 
 h4 {
-  color: #efecca;
+  color: #266D84;
   font-size: 50px;
 }
 
 h5 {
-  color: #a8d0db;
-  font-size: 16px;
-
+  font-size: 19px;
+  font-family: 'Exo 2', sans-serif;
+  color: #266D84;
 }
 
 h6 {
@@ -107,24 +111,10 @@ h6 {
 }
 
 p {
+  font-size: 16px;
   display: block;
-  color: white;
-  text-shadow: 1px 1px 2px black;
-}
-
-/*=================================================
-BUTTONS
- ==================================================*/  
-
-.btn { 
-  border-radius: 5px;
-  display: inline-block;
-  margin: 0;
-}
-
-.btn-1 { /*1px solid grey border*/
-  border: 1px solid #dfe2e5;
-  padding: 10px 30px; /*top and bottom: 10px, left and right: 30px */
+  color: black;
+  font-family: 'Raleway', Helvetica, Arial, sans-serif;
 }
 
 /*================================================
@@ -164,7 +154,8 @@ body {
 
 .content {
   padding-top:100px;
-  display:block;
+  display: block;
+  z-index: 500;
 }
 
 
@@ -172,6 +163,26 @@ body {
 
 header {
   line-height: 0.6;
+  top: 0px;
+  padding-top: 5%;
+  padding-bottom: 1%;
+  background: #89C1B5;
+  display: block;
+  border-bottom: 2px solid #DAEDE6;
+  width: 100%
+  top: 0px;
+  z-index: 1000;
+}
+
+.headerbg {
+
+}
+
+.content {
+  width: 100%;
+  background: #89C1B5;
+  height: 100%;
+  margin: 0px auto;
 }
 
 .hello {
@@ -199,6 +210,9 @@ header {
   vertical-align: top;
 }
 
+.description {
+  padding-top: 30px;
+}
 
 .title {
   font-family: 'Slabo 27px', serif;
@@ -212,12 +226,11 @@ header {
   padding-left: 30px;
 }
 
-
 /*========== NAVIGATION BAR =============*/
 
 nav {
   display: inline-block;
-  padding-bottom: 5px;
+  padding-bottom: 0px;
   padding-right: 15px;
   float: right;
 }
@@ -240,13 +253,15 @@ nav {
 }
 
 a {
-  font-size: 16px;
-  color: #b63719;
+  font-size: 19px;
+  font-family: 'Exo 2', sans-serif;
+  color: #266D84;
   text-decoration: none;
+  padding-left: 2px;
 }
 
 a:hover {
-  color: #f53e05;
+  color: #DAEDE6;
 }
 
 .fixPosition {
@@ -316,8 +331,27 @@ a:hover {
 
 footer {
   font-size: 12px;
-  color: white;
+  color: #DAEDE6;
   margin-bottom: 0;
+}
+
+.whiteline {
+  border-top: 2px solid #DAEDE6;
+}
+
+/*======================================================
+ABOUT 
+======================================================*/
+.paintbrush {
+  max-width: 30%;
+  margin-left: 35%;
+  margin-right: 35%;
+}
+
+.frenchhorn {
+  max-width: 60%;
+  margin-left: 20%;
+  margin-right: 20%;
 }
 
 /*=====================================================
@@ -357,14 +391,59 @@ PROJECTS
   padding-right:10%;
 }
 
+.inbt {
+  max-width: 100%;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.cbid {
+  max-width: 100%;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
 /*==================== CONTACT ===================*/
 .linkedin {
-  max-width: 40%;
+  max-width: 60%;
+  opacity: 1;
 }
 
 .gmail {
-  max-width: 40%;
+  max-width: 60%;
+  opacity: 1;
+  z-index: 100;
 }
+
+.github {
+  max-width: 60%;
+  opacity: 1;
+}
+
+.gmail-bg {
+  background: #969A97;
+  height: auto;
+  border-radius: 40px;
+  padding: 15px;
+  padding-top: 30px;
+}
+
+.linkedin-bg {
+  background: #969A97;
+  height: auto;
+  border-radius: 40px;
+  padding: 15px;
+  padding-top: 30px;
+}
+
+.github-bg {
+  background: #969A97;
+  height: auto;
+  border-radius: 40px;
+  padding: 15px;
+  padding-top: 30px;
+}
+
 
 /*====================================================== 
 ANIMATION CODE 
