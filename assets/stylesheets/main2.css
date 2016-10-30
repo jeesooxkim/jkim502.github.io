@@ -71,21 +71,20 @@ h1, h2, h3, h4, h5, h6, p { /*setting the bottom margin for the text elements (b
   font-family: 'Exo 2', sans-serif;
 }
 
-h1 { /*title of each new page*/ /*title page subtitle*/
-  color: #13C4A3;
-  font-size: 25px;
+h1 { /*title of each new page*/
+  color: #9B070C;
+  font-size: 27px;
 }
 
-h2 { /*main page heading titles*/
-  color: #8E9AAF;
-  font-size: 40px;
-  font-family: 'Exo 2', sans-serif;
+h2 { /*white subtitles*/
+  color: #e6e2af;
+  font-size: 18px;
 
 }
 
 h3 {
   color: #e6e2af;
-  font-size: 30px;
+  font-size: 24px;
 }
 
 h4 {
@@ -94,34 +93,21 @@ h4 {
 }
 
 h5 {
-  font-size: 25px;
+  font-size: 19px;
   font-family: 'Exo 2', sans-serif;
-  color: #e6e2af;
+  color: #266D84;
 }
 
-h6 { /*JEESOO KIM.*/
-  color: #263354;
-  font-size: 50px;
-  font-family: 'Raleway', Helvetica, Arial, sans-serif;
+h6 {
+  color: #efecca;
+  font-size: 35px;
 }
 
 p {
-  font-size: 18px;
+  font-size: 15px;
   display: block;
-  font-family: 'Raleway', Helvetica, Arial, sans-serif;
-}
-
-.p1 {
-  color: white;
-}
-
-.p2 {
   color: black;
-}
-
-.subheader {
-  padding-top: 3%;
-  padding-bottom: 3%;
+  font-family: 'Raleway', Helvetica, Arial, sans-serif;
 }
 
 /*================================================
@@ -164,69 +150,102 @@ MY DESIGNS ARE KICKING OFF NOW WOO
 HOME
 =================================================*/
 body {
-  background: #F6F7F8;
+  background-color: #DAEDE6;
+  overflow: hidden;
   margin: 0;
 }
 
-section {
-  margin-bottom: 10%;
-  background: #263354;
+.content {
+  padding: 15% 3% 3% 3%;
+  font-family: 'Raleway', Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 2;
+  display: block;
+  z-index: 500;
+  height: 100%;
+  width:100%;
 }
 
-/*============ INITIAL PAGE ==================*/
+
+/*============ HEADER ==================*/
 
 header {
   line-height: 0.6;
   top: 0px;
+  padding-top:10%;
   display: block;
   width: 100%;
   top: 0px;
-  text-align: center;
   z-index: 1000;
 }
 
-#opening {
-  padding-top: 7%;
-  min-height: 700px;
+.title {
+  font-family: 'Slabo 27px', serif;
+  text-shadow: none;
+  padding-left:30px;
+  padding-top: 40px;
+
 }
 
 .subtitle {
+  display: block;
+  padding:30px;
   padding-top:15px;
 }
 
-#face {
-  display: inline-block;
-  max-height: 400px;
-  min-height: 100px;
-  padding-bottom: 20px;
+#opener {
+  display:block;
+  padding-top:15px;
+  padding-bottom:15px;
+  padding-left: 15px;
 }
 
+.main {
+  background-color: rgba(255, 255, 255, 0.25);
+  margin-left: 35%;
+  margin-top: 15%;
+  padding-top: 15px;
+}
 
-#faceopen {
-  display: none;
-  max-height: 400px;
-  min-height: 100px;
-  padding-bottom: 20px;
+#lamp-bg {
+  position: absolute;
+  min-height: 500px;
+  z-index: 100;
 }
 
 /*============= NAVBAR ===============*/
 
+.navbar {
+  width: 500px;
+}
+
 .icon { 
-  height: 30px;
-  margin-right: 10px;
-  margin-left: 10px;
-  margin-top: 15px;
+  display:inline;
+  width: 50px;
+  height: 50px;
+  border-radius:25px;
+  z-index: 500;
+  margin-left: 20px;
+  padding-right: 10px;
 }
 
-#contacticon {
-  width: 30px;
-  height: auto;
-  margin-bottom: 2px;
+.home {
+  background: blue;
 }
 
-.icondiv {
-  display: inline-block;
+.about {
+  background: red;
 }
+
+.projects {
+  background: white;
+}
+
+.contact {
+  background: green;
+}
+
+
 
 
 /*============ GENERAL ==============*/
@@ -247,27 +266,6 @@ a:hover {
   color: #DAEDE6;
 }
 
-#gohometab {
-  display: inline-block;
-  margin-top: 1%;
-  margin-right: 0;
-  padding:10px;
-  padding-right: 20px;
-  position: fixed;
-  float: right:
-  border: 3px solid black;
-  border-radius: 0px 20px 20px 0px;
-  background: #A31621;
-}
-
-#gohometagtext {
-  color: #F6F7F8;
-}
-
-#gohometagtext:hover {
-  color: #DAEDE6;
-}
-
 .fixPosition {
   position: fixed;
 }
@@ -275,6 +273,11 @@ a:hover {
 #top {
   min-height: 100%;
   position: relative;
+}
+
+.behindHeader {
+  position: absolute;
+  overflow: auto;
 }
 
 .twocolumnleft {
@@ -296,123 +299,86 @@ a:hover {
   vertical-align: top;
 }
 
-.content {
-  padding: 15% 3% 3% 3%;
-  font-family: 'Raleway', Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  line-height: 2;
-  display: block;
-  z-index: 1000;
-  height: 100%;
-  width:100%;
-}
-
 .narrowcontent1 {
   padding-left: 10%;
   padding-right: 10%;
-  padding-top: 3%;
-  padding-bottom: 3%;
-  font-family: 'Raleway', Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  line-height: 2;
-  display: block;
-  z-index: 1000;
-  height: 100%;
-  width:100%;
-}
 }
 
 .narrowcontent2 {
   padding-left: 20%;
-  padding-right: 20%;
-  padding-top: 3%;
-  padding-bottom: 3%;
-  font-family: 'Raleway', Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  line-height: 2;
-  display: block;
-  z-index: 1000;
-  height: 100%;
-  width:100%;
-}
+  padding-right: 20%
 }
 
 .extrapadding {
   padding-top: 100px;
 }
 
-.extrapaddingbottom {
-  padding-bottom: 30px;
-}
-
-.extramarginbottom {
-  margin-bottom: 30px;
-}
-
-.extramargin {
-  height: 70px;
-}
-
 /*======================================================
 ABOUT 
 ======================================================*/
-
 .paintbrush {
-  max-width: 40%;
-  margin-left: 20%;
-  margin-right: 20%;
+  max-width: 30%;
+  margin-left: 35%;
+  margin-right: 35%;
 }
 
 .frenchhorn {
-  margin-top: 90px;
-  margin-bottom: 90px;
-  max-width: 75%;
-  margin-left: 12.5%;
-  margin-right: 12.5%;
-}
-
-.travel {
-  margin-left: 18%;
-  margin-right: 12%;
+  max-width: 60%;
+  margin-left: 20%;
+  margin-right: 20%;
 }
 
 /*=====================================================
 PROJECTS
 ======================================================*/
-
-.projects {
-  padding-left: 18%;
-  padding-right: 18%;  
+#container{
+  width: 100%;
+  height: 500px;
 }
 
-.project {
-  display: inline-block;
-  background: #F6F7F8;
-  padding: 2%;
-  border-radius: 30px;
+#list-container {
+  width: 90%;
+  overflow: hidden;
+  float: left;    
 }
 
-.icondiv {
-  vertical-align: top
+.list{
+    background: #89C1B5;
+    float: left;
 }
 
-.disappearingimg {
-  display:inline-block;
+#arrowR{
+    background:grey;
+    width: 5%;
+    height:500px;
+    float:right;
+    cursor:pointer;
+    border-radius: 30px;
 }
 
-.caption {
-  display:none;
-  margin-top: 9px;
-  font-size: 13px;
+#arrowR:hover, #arrowL:hover {
+  background: lightgrey;
 }
 
-.icondiv a:hover .disappearingimg {
-  display: none;
+#arrowL{
+    background:grey;
+    width:5%;
+    height:500px;
+    float:left;
+    cursor:pointer;
+    border-radius: 30px;
 }
 
-.icondiv a:hover .caption {
-  display: inline-block;
+.item{
+  min-width: 0;
+  width: 100%;
+  height: 490px;
+  margin-left: 0.5%;
+  margin-right: 2%;
+  float:left;
+  position:relative;
 }
+
 /*==========================*/
 .imageleft {
   float: right;
@@ -423,77 +389,64 @@ PROJECTS
 }
 
 .speechbanana {
-  display: inline-block;
   max-width:65%;
-  margin-top: 3%;
-  margin-left: 17.5%;
-  margin-right: 17.5%;
+  margin-left: 10%;
+  padding-left: 10%;
+  padding-right:10%;
 }
 
 .hopkinsmedicine {
   max-width:100%;
-  margin-top: 4%;
-  margin-left: auto;
-  margin-right: auto;
+  padding-left: 10%;
+  padding-right:10%;
 }
 
 
 .jhuwhiting {
   max-width:100%;
-  margin-top: 4%;
-  margin-left: auto;
-  margin-right: auto;
+  padding-left: 10%;
+  padding-right:10%;
 }
 
 .tremtex {
   max-width:100%;
-  margin-top: 4%;
-  margin-left: auto;
-  margin-right: auto;
+  padding-left: 10%;
+  padding-right:10%;
 }
 
 .inbt {
-  border: 2px solid black;
-  max-width:100%;
-  margin-top: 4%;
-  margin-left: auto;
-  margin-right: auto;
+  max-width: 100%;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 .cbid {
-  border: 2px solid black;
-  max-width:100%;
-  margin-top: 4%;
-  margin-left: auto;
-  margin-right: auto;
+  max-width: 100%;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 /*==================== CONTACT ===================*/
-.contact {
-  padding-left: 18%;
-  padding-right: 18%;
-  border: 3px solid grey;
-}
-
 .linkedin {
-  max-width: 40%;
+  max-width: 60%;
   opacity: 1;
 }
 
 .gmail {
-  max-width: 40%;
+  max-width: 60%;
   opacity: 1;
+  z-index: 100;
 }
 
 .github {
-  max-width: 40%;
+  max-width: 60%;
   opacity: 1;
 }
 
 .gmail-bg {
   background: #969A97;
   height: auto;
-  border-radius: 40px 40px 40px 40px;
+  border-radius: 0px 0px 40px 40px;
   padding: 15px;
   padding-top: 30px;
 }
@@ -501,7 +454,7 @@ PROJECTS
 .linkedin-bg {
   background: #969A97;
   height: auto;
-  border-radius: 40px 40px 40px 40px;
+  border-radius: 0px 0px 40px 40px;
   padding: 15px;
   padding-top: 30px;
 }
@@ -509,33 +462,9 @@ PROJECTS
 .github-bg {
   background: #969A97;
   height: auto;
-  border-radius: 40px 40px 40px 40px;
+  border-radius: 0px 0px 40px 40px;
   padding: 15px;
   padding-top: 30px;
-}
-
-/*======================== FOOTER ==========================*/
-
-footer {
-  font-size: 12px;
-  bottom: 0;
-  width:100%;
-}
-
-.footer {
-  margin: auto;
-  width: 100%;
-  text-align:center;
-}
-
-.backtotop {
-
-}
-
-.whiteline {
-  border-top: 3px solid #263354;
-  padding-top: 15px;
-  padding-bottom: 20px;
 }
 
 
@@ -574,21 +503,6 @@ ANIMATION CODE
   animation-duration:1.25s;
 }
 
-.fadeInFast {
-  opacity:0;
-  -webkit-animation:fadeIn ease-in 1;
-  -moz-animation:fadeIn ease-in 1;
-  animation:fadeIn ease-in 1;
-
-  -webkit-animation-fill-mode: forwards;
-  -moz-animation-fill-mode:forwards;
-  animation-fill-mode:forwards;
-
-  -webkit-animation-duration:0.5s;
-  -moz-animation-duration:0.5s;
-  animation-duration:0.5s;
-}
-
 .one { 
   -webkit-animation-delay:0.7s;
   -moz-animation-delay:0.7s;
@@ -602,27 +516,27 @@ ANIMATION CODE
 }
 
 .three { 
-  -webkit-animation-delay:1.3s;
-  -moz-animation-delay:1.3s;
-  animation-delay:1.3s;
+  -webkit-animation-delay:2s;
+  -moz-animation-delay:2s;
+  animation-delay:2s;
 }
 
 .four { 
-  -webkit-animation-delay:1.4s;
-  -moz-animation-delay:1.4s;
-  animation-delay:1.4s;
+  -webkit-animation-delay:3s;
+  -moz-animation-delay:3s;
+  animation-delay:3s;
 }
 
 .five { 
-  -webkit-animation-delay:1.5s;
-  -moz-animation-delay:1.5s;
-  animation-delay:1.5s;
+  -webkit-animation-delay:3.5s;
+  -moz-animation-delay:3.5s;
+  animation-delay:3.5s;
 }
 
 .six { 
-  -webkit-animation-delay:1.6s;
-  -moz-animation-delay:1.6s;
-  animation-delay:1.6s;
+  -webkit-animation-delay:4s;
+  -moz-animation-delay:4s;
+  animation-delay:4s;
 }
 
 /*=== Trigger ===*/
