@@ -466,6 +466,7 @@ PROJECTS
   display: inline-block;
   max-width:65%;
   margin-top: 15%;
+  margin-bottom: 10%;
   margin-left: 17.5%;
   margin-right: 17.5%;
 }
@@ -473,6 +474,7 @@ PROJECTS
 .cahanlogo {
   width:100%;
   margin-top: 15%;
+  margin-bottom: 10%;
   padding-left: 20%;
   padding-right: 20%;
 }
@@ -481,6 +483,7 @@ PROJECTS
 .jhuwhiting {
   max-width:100%;
   margin-top: 15%;
+  margin-bottom: 10%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -488,6 +491,7 @@ PROJECTS
 .tremtex {
   max-width:90%;
   margin-top: 15%;
+  margin-bottom: 10%;
   margin-left: 5%;
   margin-right: 5%;
 }
@@ -495,6 +499,7 @@ PROJECTS
 .inbt {
   max-width:90%;
   margin-top: 15%;
+  margin-bottom: 10%;
   margin-left: 7%;
   margin-right: 3%;
 }
@@ -503,6 +508,7 @@ PROJECTS
   border: 2px solid black;
   max-width:100%;
   margin-top: 15%;
+  margin-bottom: 10%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -510,6 +516,7 @@ PROJECTS
 .pygame {
   max-width:100%;
   margin-top: 15%;
+  margin-bottom: 10%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -517,6 +524,7 @@ PROJECTS
 .face {
   max-width:70%;
   margin-top: 15%;
+  margin-bottom: 10%;
   margin-left:15%;
   margin-right: 15%;
 }
