@@ -78,14 +78,14 @@ h1 { /*title of each new page*/ /*title page subtitle*/
 
 h2 { /*main page heading titles*/
   color: #8E9AAF;
-  font-size: 40px;
+  font-size: 36px;
   font-family: 'Exo 2', sans-serif;
 
 }
 
 h3 {
   color: #e6e2af;
-  font-size: 30px;
+  font-size: 26px;
 }
 
 h4 {
@@ -106,7 +106,7 @@ h6 { /*JEESOO KIM.*/
 }
 
 p {
-  font-size: 18px;
+  font-size: 17px;
   display: block;
   font-family: 'Raleway', Helvetica, Arial, sans-serif;
 }
@@ -257,15 +257,15 @@ a:hover {
   float: right:
   border: 3px solid black;
   border-radius: 0px 20px 20px 0px;
-  background: #A31621;
+  background: #9CEC5B;
 }
 
 #gohometagtext {
-  color: #F6F7F8;
+  color: #263354;
 }
 
 #gohometagtext:hover {
-  color: #DAEDE6;
+  color: #F7310E;
 }
 
 .fixPosition {
@@ -320,7 +320,7 @@ a:hover {
   height: 100%;
   width:100%;
 }
-}
+
 
 .narrowcontent2 {
   padding-left: 20%;
@@ -335,10 +335,22 @@ a:hover {
   height: 100%;
   width:100%;
 }
+
+.nopaddingtop {
+  padding-top: none;
 }
+
+.nomargintop {
+  margin-top: none;
+}
+
 
 .extrapadding {
   padding-top: 100px;
+}
+
+.extrapaddingtoplittle {
+  padding-top: 50px;
 }
 
 .extrapaddingbottom {
@@ -389,6 +401,7 @@ PROJECTS
   display: inline-block;
   background: #F6F7F8;
   padding: 2%;
+  margin-bottom: 10%;
   border-radius: 30px;
 }
 
@@ -413,6 +426,33 @@ PROJECTS
 .icondiv a:hover .caption {
   display: inline-block;
 }
+
+/*=============div backgrounds=========*/
+
+.sbbg {
+  background: #FF593F;
+}
+
+.llbg {
+  background: #FFD147;
+}
+
+.facebg {
+  background: #F6F7F8;
+}
+
+.ttbg {
+  background: #9CEC5B;
+}
+
+.clbg {
+  background: #3772FF;
+}
+
+.hlbg {
+  background: #FF0961;
+}
+
 /*==========================*/
 .imageleft {
   float: right;
@@ -425,49 +465,110 @@ PROJECTS
 .speechbanana {
   display: inline-block;
   max-width:65%;
-  margin-top: 3%;
+  margin-top: 15%;
   margin-left: 17.5%;
   margin-right: 17.5%;
 }
 
-.hopkinsmedicine {
-  max-width:100%;
-  margin-top: 4%;
-  margin-left: auto;
-  margin-right: auto;
+.cahanlogo {
+  width:100%;
+  margin-top: 15%;
+  padding-left: 20%;
+  padding-right: 20%;
 }
 
 
 .jhuwhiting {
   max-width:100%;
-  margin-top: 4%;
+  margin-top: 15%;
   margin-left: auto;
   margin-right: auto;
 }
 
 .tremtex {
-  max-width:100%;
-  margin-top: 4%;
-  margin-left: auto;
-  margin-right: auto;
+  max-width:90%;
+  margin-top: 15%;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 .inbt {
-  border: 2px solid black;
-  max-width:100%;
-  margin-top: 4%;
-  margin-left: auto;
-  margin-right: auto;
+  max-width:90%;
+  margin-top: 15%;
+  margin-left: 7%;
+  margin-right: 3%;
 }
 
 .cbid {
   border: 2px solid black;
   max-width:100%;
-  margin-top: 4%;
+  margin-top: 15%;
   margin-left: auto;
   margin-right: auto;
 }
 
+.pygame {
+  max-width:100%;
+  margin-top: 15%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.face {
+  max-width:70%;
+  margin-top: 15%;
+  margin-left:15%;
+  margin-right: 15%;
+}
+
+.lunarlander {
+  max-width:85%;
+  margin-top: 15%;
+  margin-right: 15%;
+}
+
+
+/*================INDIVIDUAL PAGES==================*/
+#pgspeechbanana {
+  display: inline-block;
+  max-width:60%;
+  margin-top: 8%;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+#pgcahanlogo {
+  width: 70%;
+  margin-top: 15%;
+  margin-right: 15%;
+  float: right;
+}
+
+#pgtremtex {
+  max-width:85%;
+  margin-top: 20%;
+  margin-right: 13%;
+  float: right;
+}
+
+#pginbt {
+  max-width:85%;
+  padding-left: 20%;
+  margin-right: 15%;
+  float: right;
+}
+
+#pgface {
+  max-width: 40%;
+  margin-right: 25%;
+  float: right;
+}
+
+#pglunarlander {
+  max-width:75%;
+  margin-right: 15%;
+  float: right;
+}
 /*==================== CONTACT ===================*/
 .contact {
   padding-left: 18%;
