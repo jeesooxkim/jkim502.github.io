@@ -1,139 +1,370 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
-		<meta charset="utf-8">
+	    <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
 		<title>Jeesoo Kim</title>
-		<link rel="stylesheet" href="assets/stylesheets/main.css">
-		<link href='https://fonts.googleapis.com/css?family=Slabo+27px|Raleway:400,200,700,300italic,200italic|Roboto+Slab:400,100|Titillium+Web:400,200,200italic,400italic,600,600italic' rel='stylesheet' type='text/css'>
-        <link href="https://fonts.googleapis.com/css?family=Exo+2" rel="stylesheet">
-		<link rel="icon" type="image/png" href="assets/images/icons/favicon.png" />
-		<link rel="icon" type="image/vnd.microsoft.icon" href="assets/images/icons/favicon.ico" />
+		<link rel="icon" type="image/png" href="images/favicon.png" />
+		<link rel="icon" type="image/vnd.microsoft.icon" href="images/favicon.ico" />
+		<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed|Overpass" rel="stylesheet">
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<link rel="stylesheet" href="css/main.css">
 
-        <script type="text/javascript" src="https://ajax.microsoft.com/ajax/jQuery/jquery-1.4.2.min.js"></script>
+		<script type="text/javascript" src="https://ajax.microsoft.com/ajax/jQuery/jquery-1.4.2.min.js"></script>
 		<script type="text/javascript" src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
-		<script type="text/javascript" src="assets/script/script.js"></script>
-	    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-	    <script type="text/javascript" src="assets/script/smoothscroll.js"></script>
+		<!--<script type="text/javascript" src="assets/script/script.js"></script>-->
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 	</head>
 
- 	<div class="se-pre-con"></div>
+	<div class="se-pre-con"></div>
 
-	<body id="top">
-		<header class="clearfix" id="header">
-			<div class="clearfix" id="opening">
-				<img src="assets/images/face.png" onmouseover="SwapDivs('face', 'faceopen')" id="face"/>
-				<img src="assets/images/faceopen.png" onmouseout="SwapDivs('face', 'faceopen')" id="faceopen"/>
+	<body>
+		<header class="navbar-fixed-top navbar-default" id="navigation" role="banner">
+			<nav role="navigation">
+			  <div>
+			    <!-- Brand and toggle get grouped for better mobile display -->
+			    <div class="navbar-header">
+			    </div>
 
-				<h6 class="animate fadeInDown one title">JEESOO KIM.</h6>
-				<h1 class="animate fadeInUp one subtitle">Developer. Designer. Traveler.</h1>
+			    <!-- Collect the nav links, forms, and other content for toggling -->
+			    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			      <ul class="nav navbar-nav">
+			      </ul>
 
-				<div class="navbar">
-					<div class="icondiv">
-						<a href="#top" class="smoothScroll" id="adiv"><img src="assets/images/icons/home.png" class="fadeIn two icon" id="homeicon"><br><p class="caption p2 fadeInFast">home</p></a>
-					</div>
-					<div href="#toabout" class="icondiv">
-						<a href="#toabout" class="smoothScroll" id="adiv"><img src="assets/images/icons/about.png" class="fadeIn three icon" id="abouticon"><br><p class="caption p2 fadeInFast">about</p></a>
-						
-					</div>
-					<div href="#toprojects" class="icondiv">
-						<a href="#toprojects" class="smoothScroll" id="adiv"><img src="assets/images/icons/projects.png" class="fadeIn four icon" id="projectsicon"><br><p class="caption p2 fadeInFast fadeOutFast">projects</p></a>
-						
-					</div>
-					<div class="icondiv">
-						<a href="assets/images/resume.pdf" id="adiv"><img src="assets/images/icons/resume.png" class="fadeIn five icon" id="resumeicon"><br><p class="caption p2 fadeInFast">resume</p></a>
-						
-					</div>
-					<div href="tocontact" class="icondiv">
-						<a href="#tocontact" class="smoothScroll" id="adiv"><img src="assets/images/icons/contact.png" class="fadeIn six icon" id="contacticon"><br><p class="caption p2 fadeInFast">contact</p></a>
-					</div>
-				</div>
-			</div>
-
+			      <ul class="nav navbar-nav navbar-right navbartext">
+			        <li class="active text-center"><a href="#home">HOME<span class="sr-only">(current)</span></a></li>
+			        <li class="text-center"><a href="#showcase">SHOWCASE</a></li>
+			        <li class="text-center"><a href="assets/resume.pdf">RESUME</a></li>
+			        <li class="text-center"><a href="#about">ABOUT ME</a></li>
+			        <li class="text-center"><a href="#contact">CONTACT</a></li>
+			      </ul>
+			    </div><!-- /.navbar-collapse -->
+			  </div><!-- /.container-fluid -->
+			</nav>
 		</header>
 
-		<section class="welcome narrowcontent1" id="toabout">
-			<h2 class="center">HELLO!_</h2>
-			<p class="p1">I'm a sophomore studying Computer Science and Biomedical Engineering at Johns Hopkins University, located in Baltimore, MD. I'm originally from the small suburbs of Cleveland, Ohio, but also spent some time of my life in Gainesville, Florida, and Seoul, South Korea.</p>
-			<p class="p1 center">If you'd like to learn more about me, click <a href="about.html">here</a>!</p>
-
-		</section>
-
-		<section class="narrowcontent1 projects" id="toprojects">
-			<h2 class="center extrapaddingbottom">PROJECTS_</h2>
-			<div class="threecolumn extrapaddingtoplittle">
-				<div class="project sbbg" id="adiv">
-					<a href="speechbanana.html" id="adiv">
-						<img src="assets/images/speechbanana.png" class="speechbanana"/>
-					</a>
+		<div id="fullscreen-fade"></div>
+		<div class="popup bg-bright" id="kriegerPopUp">
+			<div class="popup-inner bg-light">
+				<div class="col-xs-3 col-sm-6 col-md-6">
+					<img class="popup-image" src="images/popup/krieger.jpg" alt="krieger">
 				</div>
-				<div class="project llbg" id="adiv">
-					<a href="lunarlander.html">
-						<img src="assets/images/pygame.png" class="pygame"/>
-					</a>
+				<div class="col-xs-9 col-sm-6 col-md-6 scrollable smallbodytext">
+					<p class="text-left large-emp">WEB ASSISTANT</p>
+					<p class="text-left">As the web assistant at the JHU Krieger School of Arts and Sciences Advising Office,
+					I maintain the advising website, make updates, and implement new and creative ways to make the site more
+						intuitive and aesthetically appealing.</p>
+					<p>The website utilizes HTML, CSS, JavaScript, and PHP.</p>
+					<p>CHECK IT OUT : <a href="http://www.advising.jhu.edu">www.advising.jhu.edu</a></p>
 				</div>
-			</div>
-
-			<div class="threecolumn">
-				<div class="project facebg" id="adiv">
-					<a href="website.html">
-						<img src="assets/images/face.png" class="face"/>
-					</a>
+				<div class="col-xs-12 col-sm-12 col-md-12">
+					<p class="text-center smallbodytext text-grey exit-text">CLICK ANYWHERE TO EXIT DETAILS</p>
 				</div>
-				<div class="project ttbg" id="adiv">
-					<a href="tremtex.html">
-						<img src="assets/images/tremtex.png" class="tremtex"/>
-					</a>
-				</div>
-			</div>
-			<div class="threecolumn extrapaddingtoplittle">
-				<div class="project clbg">
-					<a href="cahanlab.html" id="adiv">
-						<img src="assets/images/cahanlogo.png" class="cahanlogo"/>
-					</a>
-				</div>
-				<div class="project hlbg">
-					<a href="hristovalab.html" id="adiv">
-						<img src="assets/images/inbt.png" class="inbt"/>
-					</a>
-				</div>
-			</div>
-
-			<br style="clear:both;"/>
-		</section>
-
-		<section class="narrowcontent1 contact" id="tocontact">
-			<h2 class="center extrapaddingbottom">CONTACT ME_</h2>
-			<section class="clearfix">
-				<span class="threecolumn center gmail-bg">
-					<img src="assets/images/gmail.png" class="gmail"/>
-					<h3>EMAIL ME</h3>
-					<p>jeesookim AT jhu DOT edu</p>
-				</span>
-
-				<div class="threecolumn center linkedin-bg">
-					<img src="assets/images/linkedin.png" class="linkedin"/>
-					<h3>LinkedIn PROFILE</h3>
-					<a href="https://www.linkedin.com/in/jeesookim">OPEN JEESOO'S LINKEDIN</a>
-				</div>
-
-				<div class="threecolumn center github-bg">
-					<img src="assets/images/github.png" class="github"/>
-					<h3>GitHub PROFILE</h3>
-					<a href="https://github.com/jkim502">OPEN JEESOO'S GITHUB</a>
-				</div>
-			</section>
-		</section>
-
-	</body>
-
-	<footer class="clearfix">
-		<div class="footer">
-			<a href="#top" class="backtotop smoothScroll">back to top</a>
-			<div class="whiteline">
-				<p>&copy; Jeesoo Jean Kim 2016</p>
 			</div>
 		</div>
-	</footer>
+		<div class="popup bg-bright" id="bananaPopUp">
+			<div class="popup-inner bg-light">
+				<div class="col-xs-3 col-sm-6 col-md-6">
+					<img class="popup-image" src="images/popup/banana1.png" alt="speech">
+				</div>
+				<div class="col-xs-9 col-sm-6 col-md-6 scrollable smallbodytext">
+					<p class="text-left large-emp">MOBILE DEVELOPER</p>
+					<p class="text-left">Speech Banana is an exercise-based application designed to aid deaf individuals
+						who have received cochlear implants. These individuals have lingering impairment in
+						communication due to underdeveloped listening skills. Through easily accessible systemized
+						listening exercises, we aim to improve their communication abilities, and consequently, their
+						quality of life.</p>
+					<p>I am the developer of the Android version of the app, and I am also in charge of maintaining the
+						iOS version. In the future we plan to implement gaming components to the chapter exercises to
+						create an engaging user interface, in order to encourage younger users. We are also seeking to
+						increase our reach within the deaf community by working on a British English version and a
+						Korean version of the application. We are currently undergoing preparations for clinical trials.</p>
+					<p>CHECK IT OUT : <a href="http://speechbanana.jhu.edu/">http://speechbanana.jhu.edu/</a></p>
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-12">
+					<p class="text-center smallbodytext text-grey exit-text">CLICK ANYWHERE TO EXIT DETAILS</p>
+				</div>
+			</div>
+		</div>
+		<div class="popup bg-bright" id="tremtexPopUp">
+			<div class="popup-inner bg-light">
+				<div class="col-xs-3 col-sm-6 col-md-6">
+					<img class="popup-image" src="images/popup/tremtex.png" alt="tremtex">
+				</div>
+				<div class="col-xs-9 col-sm-6 col-md-6 scrollable smallbodytext">
+					<p class="text-left large-emp">PRODUCT DEVELOPER</p>
+					<p class="text-left">TremTex, an undergraduate biomedical engineering project team, focuses on
+						building an in-home tDCS treatment device for reducing Parkinson's Disease patients' tremors.
+						By providing an easily accessible, inexpensive, and non-invasive treatment option to Parkinson's
+						patients that is easily performed at home, we hope to revolutionize motor symptom treatment of
+						Parkinson's Disease.</p>
+
+					<!--<p>We went through extensive prototyping, including CAD and 3D printing, and iterations of business-->
+						<!--plans for our device. U was particularly involved in developing prototypes for the device, and-->
+						<!--also performed all presentations to faculty and experts, including a presentation in JHU's 2016-->
+						<!--Business Plan Competition, in which our team placed Third Place in the Undergraduate Medical-->
+						<!--Technologies Track.</p>-->
+					<p>CHECK IT OUT : <a href="http://speechbanana.jhu.edu/">http://speechbanana.jhu.edu/</a></p>
+					<!--https://www.youtube.com/watch?v=KstEveteHNM-->
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-12">
+					<p class="text-center smallbodytext text-grey exit-text">CLICK ANYWHERE TO EXIT DETAILS</p>
+				</div>
+			</div>
+		</div>
+		<div class="popup bg-bright" id="cahanlabPopUp">
+			<div class="popup-inner bg-light">
+				<div class="col-xs-3 col-sm-6 col-md-6">
+					<img class="popup-image" src="images/popup/cahanlab.jpg" alt="cahanlab">
+				</div>
+				<div class="col-xs-9 col-sm-6 col-md-6 scrollable smallbodytext">
+					<p class="text-left large-emp">RESEARCHER</p>
+					<p class="text-left">Cahan Lab focuses on accurate and efficient analysis of RNA-seq data through
+						developing a cloud-based platform (written in R language) called CellNet in order to improve
+						the accuracy of stem cell differentiation with respect to their target cells. This platform
+						utilizes AWS.
+
+					<p>My current project focuses on human RNA-seq data collection of biopsied samples from mass
+					online databases, such as GEO accession data and GTX data, and improving the efficiency of the
+					R- and Python-based CellNet pipeline in order for quicker processing and analysis of existing human
+					RNA-seq accessions. I debugged the program and made changes so that human RNA-seq data is also able
+					to be processed. I am currently feeding collected data through analysis algorithms, and obtaining
+					standard data which will eventually serve as a baseline for accuracy comparison for ex vivo
+					differentiated cells.</p>
+					<p>CHECK IT OUT : <a href="http://www.cahanlab.org/">www.cahanlab.org</a></p>
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-12">
+					<p class="text-center smallbodytext text-grey exit-text">CLICK ANYWHERE TO EXIT DETAILS</p>
+				</div>
+			</div>
+		</div>
+		<div class="popup bg-bright" id="embedPopUp">
+			<div class="popup-inner bg-light">
+				<div class="col-xs-3 col-sm-6 col-md-6">
+					<img class="popup-image" src="images/popup/dankook.jpg" alt="embed">
+				</div>
+				<div class="col-xs-9 col-sm-6 col-md-6 scrollable smallbodytext">
+					<p class="text-left large-emp">EMBEDDED SYSTEMS SUMMER INTERN</p>
+					<p class="text-left">At Dankook University Embedded Systems Lab under Dr. Choi in South Korea, I participated in OS
+					file system research, particularly examining the performance advantages of non-volatile memory (NVM)
+					in terms of latency and bandwidth, in comparison to the popularly used DRAM. I am currently in the
+						process of co-authoring a paper on this topic.</p>
+					<!--<p>CHECK IT OUT : <a href="http://speechbanana.jhu.edu/">http://speechbanana.jhu.edu/</a></p>-->
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-12">
+					<p class="text-center smallbodytext text-grey exit-text">CLICK ANYWHERE TO EXIT DETAILS</p>
+				</div>
+			</div>
+		</div>
+		<div class="popup bg-bright" id="inbtPopUp">
+			<div class="popup-inner bg-light">
+				<div class="col-xs-3 col-sm-6 col-md-6">
+					<img class="popup-image" src="images/popup/krieger.jpg" alt="inbt">
+				</div>
+				<div class="col-xs-9 col-sm-6 col-md-6 scrollable smallbodytext">
+					<p class="text-left large-emp">DATA ANALYST</p>
+					<p class="text-left">This lab focuses on analysis of cell FRET scans in order to better understand
+						the effect of receptor mutations on cancer development/tumor metastasis, as well as investigating
+						potential treatments by exposing the receptors to specific ligands.</p>
+
+					<p>I worked as a data analyst, running thousands of cell FRET and donor scans through a MATLAB
+					program in order to determine fluorescence differences depending on different mutations, ligands,
+					and dilutions. I am also currently in process of co-authoring a paper.</p>
+
+					<p>CHECK IT OUT : <a href="https://engineering.jhu.edu/hristova/">https://engineering.jhu.edu/hristova</a></p>
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-12">
+					<p class="text-center smallbodytext text-grey exit-text">CLICK ANYWHERE TO EXIT DETAILS</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="clearfix bg-ghost" id="home">
+				<div class="col-md-12 col-sm-12" id="openingpage">
+
+					<img src="images/face.png" class="titleimage" onmouseover="SwapDivs('face', 'faceopen')" id="face"/>
+					<img src="images/faceopen.png" class="titleimage" onmouseout="SwapDivs('face', 'faceopen')" id="faceopen"/>
+
+					<p class="animate fadeInDown one title text-center" id="titletext">JEESOO KIM</p>
+					<p class="animate fadeInUp one subtitle text-center" id="subtitletext">INNOVATOR + DEVELOPER</p>
+
+					<!--<div id="titleimage">-->
+						<!--<img src="images/face.png" alt="titleimage">-->
+					<!--</div>-->
+					<!--<p class="text-center" id="titletext">JEESOO KIM</p>-->
+					<!--<p class="text-center" id="subtitletext">INNOVATOR + DEVELOPER</p>-->
+				</div>
+		</div>
+
+		<div class="quotetext" id="div-quote">
+			<h2 class="text-center">"I am always doing what I cannot do yet, in order to learn how to do it."</h2>
+			<h3 class="text-center">VAN GOGH</h3>
+		</div>
+
+		<div class="bg-inverse" id="showcase">
+			<div class="container-fluid">
+			    <div class="col-xs-6 col-sm-5 col-md-5 bodytext">
+			  		    <h2 class="text-right">WORK SHOWCASE</h2>
+					    <div class="text-right div-padding">
+						    <p class="smallbodytext"><span class="large-emp">I'm Jeesoo, a junior studying Computer Science at Johns Hopkins University.</span><br/> <br/>
+								_____________________________</br> </br>
+								Find out about my projects from my recent years as an aspiring Software Engineer.
+								I'm also interested in Information Security, so I'm in the beginning stages in checking that out as well.<br/> <br/>
+								Click on a project learn more!</p>
+					    </div>
+			      </div>
+			    <div class="col-xs-6 col-sm-7 col-md-7" id="checkerboard">
+					<div class="col-xs-6 col-sm-3 col-md-2 project" id="krieger">
+						<div class="projectimage-hover">
+							<p class="text-center projectimage-text"><span class="large-emp">WEB ASSISTANT</span></br>AT KRIEGER SCHOOL OF ARTS & SCIENCES</p>
+						</div>
+						<div class="projectimage">
+							<img src="images/thumbs/hopkins.jpg" alt="krieger">
+						</div>
+					</div>
+					<div class="col-xs-6 col-sm-3 col-md-2 project" id="banana">
+						<div class="projectimage-hover">
+							<p class="text-center projectimage-text"><span class="large-emp">MOBILE DEVELOPER</span></br>AT SPEECH BANANA</p>
+						</div>
+						<div class="projectimage">
+							<img src="images/thumbs/speechbanana.jpg" alt="speechbanana">
+						</div>
+					</div>
+					<div class="col-xs-6 col-sm-3 col-md-2 project" id="tremtex">
+						<div class="projectimage-hover">
+							<p class="text-center projectimage-text"><span class="large-emp">PRODUCT ENGINEER</span></br>AT TREMTEX</p>
+						</div>
+						<div class="projectimage">
+							<img src="images/thumbs/tremtex.jpg" alt="tremtex">
+						</div>
+					</div>
+					<div class="col-xs-6 col-sm-3 col-md-2 project" id="cahanlab">
+						<div class="projectimage-hover">
+							<p class="text-center projectimage-text"><span class="large-emp">RESEARCHER</span></br>AT JHU SCHOOL OF MEDICINE</p>
+						</div>
+						<div class="projectimage">
+							<img src="images/thumbs/cahanlab.jpg" alt="cahanlab">
+						</div>
+					</div>
+					<div class="col-xs-6 col-sm-3 col-md-2 project" id="embed">
+						<div class="projectimage-hover">
+							<p class="text-center projectimage-text"><span class="large-emp">EMBEDDED SYSTEMS SUMMER INTERN</span></br>AT DANKOOK EMBEDDED SYSTEMS LAB</p>
+						</div>
+						<div class="projectimage">
+							<img src="images/thumbs/embed.jpg" alt="embed">
+						</div>
+					</div>
+					<div class="col-xs-6 col-sm-3 col-md-2 project" id="inbt">
+						<div class="projectimage-hover">
+							<p class="text-center projectimage-text"><span class="large-emp">DATA ANALYST</span></br>AT INSTITUTE FOR NANOBIOTECHNOLOGY</p>
+						</div>
+						<div class="projectimage">
+							<img src="images/thumbs/inbt.jpg" alt="inbt">
+						</div>
+					</div>
+			    </div>
+			</div>
+		</div>
+
+		<div class="bg-light" id="about">
+			<div class="container-fluid">
+				<div class="col-xs-6 col-sm-8 col-md-8">
+					<div class="col-xs-6 col-sm-3 col-md-2">
+						<a href="#" class="">
+							<img src="images/1.jpg" alt="computer" class="aboutphoto">
+						</a>
+					</div>
+					<div class="col-xs-6 col-sm-3 col-md-2">
+						<a href="#" class="">
+							<img src="images/2.jpg" alt="computer" class="aboutphoto">
+						</a>
+					</div>
+					<div class="col-xs-6 col-sm-3 col-md-2">
+						<a href="#" class="">
+							<img src="images/3.jpg" alt="computer" class="aboutphoto">
+						</a>
+					</div>
+					<div class="col-xs-6 col-sm-3 col-md-2">
+						<a href="#" class="">
+							<img src="images/4.jpg" alt="computer" class="aboutphoto">
+						</a>
+					</div>
+					<div class="col-xs-6 col-sm-3 col-md-2">
+						<a href="#" class="">
+							<img src="images/6.jpg" alt="computer" class="aboutphoto">
+						</a>
+					</div>
+					<div class="col-xs-6 col-sm-3 col-md-2">
+						<a href="#" class="">
+							<img src="images/5.jpg" alt="computer" class="aboutphoto">
+						</a>
+					</div>
+				</div>
+
+				<div class="col-xs-6 col-sm-4 col-md-4 bodytext" id="aboutdiv">
+					<h2 class="text-left div-padding">ABOUT ME</h2>
+					<p class="text-left div-padding smallbodytext"><span class="large-emp">Here are some things you would learn about me over a cup of coffee.</span><br/> <br/>
+						When I'm not coding, I really enjoy traveling, art (both drawing + seeing), and searching for great food locations. These help me take a break from staring at computer screens all day.<br/> <br/>
+						<!--Hover over each photo for more details about what I like to do!--></p>
+				</div>
+			</div>
+		</div>
+
+		<div class="bg-inverse" id="contact">
+			<div class="container-fluid">
+				<div class="col-xs-6 col-sm-4 col-md-4 bodytext">
+					<h2 class="text-right">GET IN TOUCH</h2>
+					<p class="text-right smallbodytext large-emp">If you want to talk, send me an</br>email and we'll make it happen!</p>
+					<div class="text-right div-padding">
+						<p>___________________________</p>
+						<p>Johns Hopkins University, '19</p>
+						<p>Baltimore, MD</p>
+						<p>jeesookim at jhu dot edu</p>
+					</div>
+
+					<p class="text-right"></p>
+				</div>
+
+				<div class="col-xs-6 col-sm-7 col-md-7 footertext">
+					<form id="contact-form" class="contact-form" action="#">
+						<p class="contact-name">
+							<input id="contact_name" type="text" placeholder="Full Name" value="" name="name" />
+						</p>
+						<p class="contact-email">
+							<input id="contact_email" type="text" placeholder="Email Address" value="" name="email" />
+						</p>
+						<p class="contact-message">
+							<textarea id="contact_message" placeholder="Your Message" name="message" rows="15" cols="40"></textarea>
+						</p>
+						<p class="contact-submit">
+							<a id="contact-submit" class="submit" href="#" name="submit">send email</a>
+						</p>
+
+						<div id="response">
+
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<div class="bg-light">
+			<div class="container" id="footer">
+				<p class="text-center footertext">&copy;2017 Jeesoo Kim.</p>
+			</div>
+		</div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+	</body>
 
 </html>
